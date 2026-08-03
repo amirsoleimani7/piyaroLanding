@@ -2,6 +2,25 @@
 
 @theme {
   --color-main : #ffbe00;
+  --font-yekan : "Yekan bakh", sans-serif;
 }
+
+@font-face {
+  font-family: "Yekan bakh";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* for better performance*/
+  src: url("/fonts/yekan-bakh-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan bakh";
+  src: url("/fonts/yekan-bakh-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
