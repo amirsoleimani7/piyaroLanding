@@ -1,5 +1,6 @@
 import "./footerStyle.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -40,18 +41,58 @@ export default function Footer() {
         </div>
 
         <div className="grid grid-cols-3 gap-1 w-full h-full mt-5">
-          <div className="*:text-white">
-            <h1
-              className="font-yekan text-white after:transition-all after:duration-300 after:ease-in-out font-bold text-xl relative inline-block cursor-pointer 
-            after:content-[''] after:absolute after:w-0 hover:after:w-16  after:h-1 after:rounded-2xl after:bg-main after:bottom-0 after:left-0 "
-            >
-              پیارو گلد
-            </h1>
-          </div>
-          <div className=""></div>
-          <div className="bg-red-400"></div>
-        </div>
+          <div className="*:text-white flex flex-col gap-2">
+            <div>
+              <h1
+                className="font-yekan text-white after:transition-all after:duration-300 after:ease-in-out font-bold text-xl relative inline-block cursor-pointer
+              after:content-[''] after:absolute after:w-0 hover:after:w-16  after:h-1 after:rounded-2xl after:bg-main after:bottom-0 after:left-0 "
+              >
+                پیارو گلد
+              </h1>
+              <Link href={"https://piyaro.ir/about"} target="_blank">
+                <p className="font-yekan mt-1 duration-300 ease-in-out transition-all cursor-pointer hover:text-main-hover">
+                  درباره پیارو
+                </p>
+              </Link>
+            </div>
 
+            <div>
+              <h1
+                className="font-yekan text-white after:transition-all after:duration-300 after:ease-in-out font-bold text-xl relative inline-block cursor-pointer
+              after:content-[''] after:absolute after:w-0 hover:after:w-32  after:h-1 after:rounded-2xl after:bg-main after:bottom-0 after:left-0 "
+              >
+                دریافت اپلیکیشن
+              </h1>
+
+              <Link href={"https://piyaro.ir/piyaro.apk"} target="_blank">
+                <p className="font-yekan mt-1 duration-300 ease-in-out transition-all cursor-pointer hover:text-main-hover">
+                  اندروید{" "}
+                </p>
+              </Link>
+
+              <Link href={"https://piyaro.ir/app"} target="_blank">
+                <p className="font-yekan mt-1 duration-300 ease-in-out transition-all cursor-pointer hover:text-main-hover">
+                  ایفون{" "}
+                </p>
+              </Link>
+            </div>
+          </div>
+          <div className="*:text-white flex flex-col gap-2">
+             <h1
+                className="font-yekan text-white after:transition-all after:duration-300 after:ease-in-out font-bold text-xl relative inline-block cursor-pointer
+              after:content-[''] after:absolute after:w-0 hover:after:w-32  after:h-1 after:rounded-2xl after:bg-main after:bottom-0 after:left-0 "
+              >
+                دریافت اپلیکیشن
+              </h1>
+
+              <Link href={"https://piyaro.ir/piyaro.apk"} target="_blank">
+                <p className="font-yekan mt-1 duration-300 ease-in-out transition-all cursor-pointer hover:text-main-hover">
+                  اندروید{" "}
+                </p>
+              </Link>
+          </div>
+
+        </div>
         <div className="w-full mx-auto border-b border-gray-200 mt-auto mb-0"></div>
         <div className="text-center mt-3">
           <p className="font-yekan text-white text-sm">
