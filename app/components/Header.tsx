@@ -20,12 +20,12 @@ export default function Header() {
 
       <section className="mr-auto ml-0 flex gap-3">
         <button className="p-2 rounded-xl cursor-pointer">
-          <span className="font-yekan flex gap-0.5 text-gray-700">
+          <span className="font-yekan flex gap-0.5 text-gray-700 transition-all duration-400 hover:text-black ">
             <IoIosDownload />
             دانلود اپلیکیشن{" "}
           </span>
         </button>
-        <button className="px-3 py-2 rounded-xl bg-main cursor-pointer">
+        <button className="px-3 py-2 rounded-xl bg-main cursor-pointer hover:shadow-sm hover:bg-main-hover hover:text-grey-700 transition-all duration-400 ">
           <span className="font-yekan font-bold">ورود | ثبت‌نام</span>
         </button>
       </section>
