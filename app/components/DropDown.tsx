@@ -54,8 +54,10 @@ export default function DownloadApps() {
               key={l.id}
               className="flex justify-between gap-1 items-center group"
             >
-              <span className="font-yekan text-black transition-all duration-400 group-hover:text-gray-500 ">{l.text}</span>
-              <l.icon className="text-black transition-all duration-400 group-hover:text-gray-500"/>
+              <span className="font-yekan text-black transition-all duration-400 group-hover:text-gray-500 ">
+                {l.text}
+              </span>
+              <l.icon className="text-black transition-all duration-400 group-hover:text-gray-500" />
             </Link>
           ))}
         </div>
