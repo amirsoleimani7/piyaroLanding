@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "پیارو | خرید و فروش طلا",
+  title: "پیارو | پلتفرم اختصاصی خرید و فروش آنلاین طلا",
   description: "official iranian gold transfer market (selling and buying)",
 };
 

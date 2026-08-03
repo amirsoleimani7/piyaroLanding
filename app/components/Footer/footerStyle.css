@@ -1,8 +1,9 @@
 .footer-grad {
-  background: #003457;
+  background: #247041;
   background: linear-gradient(
     90deg,
-    rgba(11, 30, 64, 1) 0%,
-    rgba(0, 52, 87, 1) 100%
+    rgba(36, 112, 65, 1) 0%,
+    rgba(19, 80, 41, 1) 100%
   );
+
 }
