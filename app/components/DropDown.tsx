@@ -52,10 +52,10 @@ export default function DownloadApps() {
             <Link
               href={l.href}
               key={l.id}
-              className="flex justify-between gap-1 items-center"
+              className="flex justify-between gap-1 items-center group"
             >
-              <span className="font-yekan">{l.text}</span>
-              <l.icon />
+              <span className="font-yekan text-black transition-all duration-400 group-hover:text-gray-500 ">{l.text}</span>
+              <l.icon className="text-black transition-all duration-400 group-hover:text-gray-500"/>
             </Link>
           ))}
         </div>
