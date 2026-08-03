@@ -2,16 +2,31 @@
 import { IoIosDownload, IoMdReturnRight } from "react-icons/io";
 import { AppLinks, AppLinktype } from "../../public/data/downloadLinks";
 
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRef } from "react";
 
 import Link from "next/link";
 
 export default function DownloadApps() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const ref = 
-  console.log(AppLinks);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+
   const handleDrop = () => {
     setShowMenu(!showMenu);
   };
@@ -29,7 +44,10 @@ export default function DownloadApps() {
       </button>
 
       {showMenu && (
-        <div className="absolute p-4 w-35 top-full left-0  rounded-xl shadow-2xl  backdrop-blur-2xl bg-white border-none outline-1 outline-gray-100 flex flex-col gap-2">
+        <div
+          className="absolute p-4 w-35 top-full left-0  rounded-xl shadow-2xl  backdrop-blur-2xl bg-white border-none outline-1 outline-gray-100 flex flex-col gap-2"
+          ref={modalRef}
+        >
           {AppLinks.map((l: AppLinktype, index: number) => (
             <Link
               href={l.href}
