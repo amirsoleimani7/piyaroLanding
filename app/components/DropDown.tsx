@@ -1,15 +1,17 @@
 "use client";
 import { IoIosDownload, IoMdReturnRight } from "react-icons/io";
-import {AppLinks}  from "../../public/data/downloadLinks";
+import { AppLinks, AppLinktype } from "../../public/data/downloadLinks";
+
 
 import { useState } from "react";
+import { useRef } from "react";
+
 import Link from "next/link";
-import { line } from "framer-motion/client";
 
 export default function DownloadApps() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-
-    console.log(AppLinks );
+  const ref = 
+  console.log(AppLinks);
   const handleDrop = () => {
     setShowMenu(!showMenu);
   };
@@ -27,10 +29,17 @@ export default function DownloadApps() {
       </button>
 
       {showMenu && (
-        <div className="absolute top-0 left-0 w-10 h-20 bg-red-600">
-            {
-           
-            }
+        <div className="absolute p-4 w-35 top-full left-0  rounded-xl shadow-2xl  backdrop-blur-2xl bg-white border-none outline-1 outline-gray-100 flex flex-col gap-2">
+          {AppLinks.map((l: AppLinktype, index: number) => (
+            <Link
+              href={l.href}
+              key={l.id}
+              className="flex justify-between gap-1 items-center"
+            >
+              <span className="font-yekan">{l.text}</span>
+              <l.icon />
+            </Link>
+          ))}
         </div>
       )}
     </div>

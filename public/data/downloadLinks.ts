@@ -18,7 +18,7 @@ export  const  AppLinks: AppLinktype[] = [
   },
   {
     id: 2,
-    text: "نسخه PWA ایفون",
+    text: "نسخه ایفون",
     href: "https://piyaro.ir/app",
     icon: FaAppStoreIos,
   },
