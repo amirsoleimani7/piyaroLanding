@@ -1,5 +1,6 @@
-import { IoIosDownload } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
+import DownloadApps from "./DropDown";
 
 export default function Header() {
   return (
@@ -12,22 +13,19 @@ export default function Header() {
           alt="Picture of the Company Logo"
         />
         <div className="h-8 w-1 border-none rounded-full bg-main"></div>
-
         <span className="font-lemonade text-xl ">پیارو گلد</span>
       </section>
 
       {/* <section>main section</section> */}
 
       <section className="mr-auto ml-0 flex gap-3">
-        <button className="p-2 rounded-xl cursor-pointer">
-          <span className="font-yekan flex gap-0.5 text-gray-700 transition-all duration-400 hover:text-black ">
-            <IoIosDownload />
-            دانلود اپلیکیشن{" "}
-          </span>
-        </button>
-        <button className="px-3 py-2 rounded-xl bg-main cursor-pointer hover:shadow-sm hover:bg-main-hover hover:text-grey-700 transition-all duration-400 ">
-          <span className="font-yekan font-bold">ورود | ثبت‌نام</span>
-        </button>
+        {/* import here */}
+        <DownloadApps/>
+        <Link href={"https://piyaro.ir/"} prefetch>
+          <button className="flex items-center justify-center px-3 py-2 rounded-xl bg-main cursor-pointer hover:shadow-sm hover:bg-main-hover hover:text-grey-700 transition-all duration-400 ">
+            <span className="font-yekan font-bold">ورود | ثبت‌نام</span>
+          </button>
+        </Link>
       </section>
     </header>
   );
