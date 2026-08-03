@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main : #ffbe00;
-  --font-yekan : "Yekan bakh", sans-serif;
+  --color-main: #ffbe00;
+  --font-yekan: "Yekan bakh", sans-serif;
+  --font-iran: "Iran Sans", sans-serif;
+  --font-lemonade : "Lemonade";
+  --font-lale : "Lalezar", sans-serif;
 }
 
 @font-face {
@@ -21,12 +24,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Iran Sans";
+  src: url("/fonts/A-Iranian-Sans/Iranian Sans.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lemonade";
+  src: url("/fonts/Lemonada/static/Lemonada-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url("/fonts/Lalezar/Lalezar-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   direction: rtl;
 }
-
-
-
-
-
