@@ -67,6 +67,13 @@ body {
     rgba(252, 248, 230, 1) 100%
   ); */
 }
+
+::-webkit-scrollbar{
+  display: none;
+  
+  background: transparent;
+}
+
 /* ---break---*/
 @theme inline {
   --font-heading: var(--font-sans);

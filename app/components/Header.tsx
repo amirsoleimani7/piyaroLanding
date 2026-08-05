@@ -15,9 +15,7 @@ export default function Header() {
         <div className="h-8 w-1 border-none rounded-full bg-main"></div>
         <span className="font-lemonade text-xl ">پیارو گلد</span>
       </section>
-
-      {/* <section>main section</section> */}
-
+      
       <section className="mr-auto ml-0 flex gap-3">
         {/* import here */}
         <DownloadApps/>
