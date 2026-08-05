@@ -15,7 +15,6 @@ export default function GoldenChance() {
         colorTo="#ffd200"
         borderWidth={2}
       />
-
       <div className="w-[70%]">
         <h1 className="font-yekan font-bold text-5xl text-main">فرصت طلایی</h1>
         <p className="font-yekan mt-4">
@@ -25,8 +24,8 @@ export default function GoldenChance() {
         </p>
       </div>
 
-      <button className="relative px-5 py-3 flex items-center justify-center border rounded-2xl group cursor-pointer transition-all duration-300 ease-in-out">
-        <span className="relative font-yekan after:content-['\2190'] after:duration-300 after:ease-in-out after:transition-all group-hover:after:left-0 afer:left-2 after:absolute">
+      <button className="relative px-5 py-3 flex items-center justify-center shadow-sm outline-1 outline-gray-200 rounded-2xl group cursor-pointer transition-all duration-50 ease-in-out hover:bg-main hover:shadow-xl hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold">
+        <span className="relative font-yekan">
           ثبت‌نام{" "}
         </span>
       </button>
