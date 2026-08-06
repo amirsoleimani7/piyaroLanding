@@ -7,7 +7,7 @@ import "./goldenChance.css";
 
 export default function GoldenChance() {
   return (
-    <div className="relative mt-auto mb-10 max-w-[80%] max-md:max-w-[90%] shadow-xl rounded-2xl flex justify-between items-center px-10 py-5  max-sm:flex-col overflow-hidden bg-gray-50">
+    <div className="relative  mb-10 max-w-[80%] max-md:max-w-[90%] shadow-xl rounded-2xl flex justify-between items-center px-10 py-5  max-sm:flex-col overflow-hidden bg-gray-50">
       <BorderBeam
         size={300}
         duration={5}

@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="w-[80%] h-full mx-auto py-5 flex-col flex">
         <div className="flex text-white items-center gap-2">
           <Image
-            src={"/logo/bg-removed.png"}
+            src="/logo/bg-removed.png"
             width={40}
             height={40}
             alt="Picture of the Company Logo"
