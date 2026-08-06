@@ -7,7 +7,7 @@ import "./goldenChance.css";
 
 export default function GoldenChance() {
   return (
-    <div className="relative  mb-10 max-w-[80%] max-md:max-w-[90%] shadow-xl rounded-2xl flex justify-between items-center px-10 py-5  max-sm:flex-col overflow-hidden bg-gray-50">
+    <div className="relative  mb-10 max-w-[80%] max-md:max-w-[90%] shadow-xl rounded-xl flex justify-between items-center px-10 py-5  max-sm:flex-col overflow-hidden bg-gray-50">
       <BorderBeam
         size={300}
         duration={5}
@@ -25,8 +25,9 @@ export default function GoldenChance() {
         </p>
       </div>
 
-      <button className="relative px-5 py-3 flex items-center justify-center shadow-sm outline-1 outline-gray-200 rounded-2xl group cursor-pointer transition-all duration-50 ease-in-out hover:bg-main hover:shadow-xl hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold max-md:mt-10">
-        <span className="relative font-yekan">ثبت‌نام </span>
+      <button className="relative px-5 py-3 flex gap-3 items-center justify-center shadow-sm outline-1 outline-gray-200 rounded-xl group cursor-pointer transition-all duration-50 ease-in-out hover:bg-main hover:shadow-xl hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold max-md:mt-10">
+        <span className="relative font-yekan">ثبت‌نام</span>
+        <FaArrowLeft/>
       </button>
     </div>
   );

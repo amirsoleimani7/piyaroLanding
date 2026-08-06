@@ -4,7 +4,7 @@ import DownloadApps from "./DropDown";
 
 export default function Header() {
   return (
-    <header className="head fixed w-[70%] top-6 rounded-2xl inset-shadow-black backdrop-blur-md flex justify-around items-center px-5 py-3 max-md:w-full max-md:top-0 max-md:rounded-b-2xl max-md:rounded-t-none z-10">
+    <header className="head fixed w-[70%] top-6 rounded-xl inset-shadow-black backdrop-blur-md flex justify-around items-center px-5 py-3 max-md:w-full max-md:top-0 max-md:rounded-b-2xl max-md:rounded-t-none z-10">
       <section className="flex h-full gap-3 items-center  " >
         <Image
           src="/logo/bg-removed.png"
