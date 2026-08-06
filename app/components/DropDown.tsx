@@ -32,7 +32,7 @@ export default function DownloadApps() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative max-md:hidden ">
       <button
         className="p-2 rounded-xl cursor-pointer flex items-center justify-center transition-all duration-400 "
         onClick={handleDrop}
@@ -54,10 +54,10 @@ export default function DownloadApps() {
               key={l.id}
               className="flex justify-between gap-1 items-center group"
             >
-              <span className="font-yekan text-black transition-all duration-400 group-hover:text-gray-500 ">
+              <span className="font-yekan text-black transition-all duration-400 group-hover:text-main ">
                 {l.text}
               </span>
-              <l.icon className="text-black transition-all duration-400 group-hover:text-gray-500" />
+              <l.icon className="text-black transition-all duration-400 group-hover:text-main" />
             </Link>
           ))}
         </div>

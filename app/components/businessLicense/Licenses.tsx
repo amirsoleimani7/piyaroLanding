@@ -10,9 +10,9 @@ import { Rock_3D } from "next/font/google";
 
 export default () => {
   return (
-    <div className="flex flex-col items-center mb-20 mt-auto ">
+    <div className="flex flex-col items-center mb-20 mt-auto max-md:w-[80%] max-xl:w-[90%] max-sm:w-full ">
       <div className="rounded-xl border-none px-3 py-1 transition-all duration-100 ease-in-out outline-1 cursor-pointer outline-gray-300 shadow-2xl hover:bg-main hover:shadow-xl hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold">
-        <h1 className="font-yekan text-xl font-semibold  ">مجوزها</h1>
+        <h1 className="font-yekan text-xl font-semibold">مجوزها</h1>
       </div>
       <Swiper
         modules={[Autoplay]}
@@ -22,6 +22,7 @@ export default () => {
           delay: 1000,
           disableOnInteraction: false,
         }}
+        
         slidesPerView={5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}

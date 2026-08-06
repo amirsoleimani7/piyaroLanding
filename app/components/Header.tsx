@@ -4,15 +4,16 @@ import DownloadApps from "./DropDown";
 
 export default function Header() {
   return (
-    <header className="head fixed w-[70%] top-6 rounded-xl inset-shadow-black backdrop-blur-md flex justify-around items-center px-5 py-3 max-md:w-full max-md:top-0 max-md:rounded-b-2xl max-md:rounded-t-none z-10">
-      <section className="flex h-full gap-3 items-center  " >
+    <header className="bg-gray-50 head shadow-md fixed w-[70%] top-6 rounded-xl inset-shadow-black backdrop-blur-md flex justify-around items-center px-5 py-3 max-md:w-[95%]  max-md:top-0 max-md:rounded-b-2xl max-md:rounded-t-none z-10 ">
+      <section className="flex h-full gap-3 items-center " >
         <Image
           src="/logo/bg-removed.png"
           width={40}
           height={40}
           alt="Picture of the Company Logo"
+          className="max-sm:hidden"
         />
-        <div className="h-8 w-1 border-none rounded-full bg-main"></div>
+        <div className="h-8 w-1 border-none rounded-full bg-main max-md:hidden"></div>
         <span className="font-lemonade text-xl ">پیارو گلد</span>
       </section>
       

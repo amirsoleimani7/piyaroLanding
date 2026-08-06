@@ -16,7 +16,7 @@ export default function Footer() {
           <span className="font-lemonade text-3xl ">پیارو گلد</span>
         </div>
 
-        <div className="w-full text-white font-yekan text-md flex flex-col  mt-5">
+        <div className="w-full text-white font-yekan text-md flex flex-col max-md:text-sm mt-5">
           <p>
             پیارو، پلتفرم اختصاصی خرید و فروش آنلاین طلا، محصولی از «گروه
             بازرگانی سرمایه طلای زرین» است. ما با تکیه بر سال‌ها تجربه و اعتبار
