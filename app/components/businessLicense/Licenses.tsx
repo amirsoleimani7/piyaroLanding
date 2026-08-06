@@ -34,22 +34,25 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import { license, LicenseType } from "../../../public/data/LicensesData";
+
+
 export default function Licenses() {
   return (
     <Carousel
       opts={{
         align: "start",
       }}
-      className="w-full max-w-3xl"
+      className="w-full max-w-3xl bg-red-500 "
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-1/3">
+        {license.map((l: LicenseType, index: number) => (
+          <CarouselItem key={index} className="basis-1/4">
             <div className="p-1">
               <div className="relative aspect-square overflow-hidden border-0 p-0">
                 <img
-                  src={`https://picsum.photos/400/400?grayscale&random=${index + 5}`}
-                  alt={`Slide ${index + 1}`}
+                  src={l.URL}
+                  alt={`License ${index + 1}`}
                   width={400}
                   height={400}
                   className="h-full w-full object-cover"
