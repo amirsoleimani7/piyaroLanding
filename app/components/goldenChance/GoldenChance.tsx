@@ -18,7 +18,7 @@ export default function GoldenChance() {
           امن باشد.
         </p>
       </div>
-      
+
       <button className="relative px-5 py-3 flex gap-3 items-center justify-center shadow-sm outline-1 outline-gray-200 rounded-xl group cursor-pointer transition-all duration-100 ease-in-out hover:bg-main hover:shadow-xl hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold max-md:mt-10">
         <span className="relative font-yekan">ثبت‌نام</span>
         <FaArrowLeft />

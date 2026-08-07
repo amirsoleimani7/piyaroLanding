@@ -16,7 +16,7 @@ export default function Faq() {
             {faqItemsdata[faqItemsdata.length - 1] === f ? (
               <></>
             ) : (
-              <div className="w-full  border-b border-gray-300"></div>
+              <div className="w-full  border-b border-gray-200"></div>
             )}
           </div>
         ))}
