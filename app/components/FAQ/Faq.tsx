@@ -1,16 +1,23 @@
-import {FaqItem} from "./faqItem";
+import { FaqItem } from "./faqItem";
+import { faqItemsdata, faqType } from "../../../public/data/FAQdata";
+
 
 export default function Faq() {
-  const handleClick = () => {};
+  console.log(faqItemsdata);
 
   return (
-    <div className="flex flex-col  mt-auto mb-10 w-[60%] h-200  rounded-xl">
-      <h1 className="font-yekan font-bold text-center text-4xl text-gray-600">سوالات متداول</h1>
+    <div className="flex flex-col  mt-auto mb-10 w-[60%] rounded-xl ">
+      <h1 className="font-yekan font-bold text-center text-4xl text-gray-600">
+        سوالات متداول
+      </h1>
       <section className="w-full flex flex-col">
-        <FaqItem question="waadp" awnser="sometihng"/>
-        <div className="w-full border-none outline-1 mx-auto my-5"></div>
+        {faqItemsdata.map((f: faqType, index: number) => (
+          <div className="flex flex-col mb-5">
+            <FaqItem question={f.question} awnser={f.awnser} />
+            <div className="w-full  border-b border-gray-300"></div>
+          </div>
+        ))}
       </section>
     </div>
   );
 }
-
