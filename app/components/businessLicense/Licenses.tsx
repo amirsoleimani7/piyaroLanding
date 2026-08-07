@@ -24,7 +24,6 @@ export default () => {
         }}
         
         slidesPerView={5}
-        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         className="w-full max-w-4xl  shadow-xl p-5 rounded-xl px-10"
       >
