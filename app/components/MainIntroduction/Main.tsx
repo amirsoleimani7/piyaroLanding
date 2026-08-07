@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <div className="w-[70%]  flex flex-col justify-between  mt-25 relative ">
       <div className="flex w-full mt-25 justify-between">
-        <div className=" w-[50%] border flex flex-col gap-5">
+        <div className=" w-[50%]  flex flex-col gap-5">
           <h1 className="text-4xl font-bold font-yekan ">
             پیاروگلد؛ پلتفرم خرید و فروش آنلاین{" "}
             <span className="gold">طلا</span>
@@ -16,17 +16,19 @@ export default function Main() {
             خرید آنلاین طلا و نقره بدون اجرت و مالیات با ارائه فاکتور رسمی،
             ضمانت اصالت و امکان تحویل فیزیکی را در پیاروگلد تجربه کنید.
           </p>
-          <div className="mt-20">
-            <button className="flex gap-1 items-center border px-4 py-1.5 rounded-md justify-between">
+
+          <div className="mt-20 flex gap-2">
+            <button className="flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold">
               <span className="font-yekan">خرید طلا</span>
-              <div className="p-1 rounded-md border rotate-90 border-gray-400 flex items-center justify-center scale-75">
+              <div className="p-1 rounded-md border rotate-90 border-white flex items-center justify-center scale-75">
                 <FaArrowDown />
               </div>
             </button>
-            <button className="flex gap-1 items-center border px-4 py-1.5 rounded-md justify-between">
-              <span className="font-yekan">قیمت طلا</span>
-              <div className="p-1 rounded-md border rotate-90 border-gray-400 flex items-center justify-center scale-75">
-                <FaArrowDown />
+
+            <button className="flex gap-2 items-center bg-main-hover-3 px-5 py-2 rounded-md justify-between">
+              <span className="font-yekan text-main ">قیمت طلا</span>
+              <div className="p-1 rounded-md border rotate-90 border-main flex items-center justify-center scale-75 ">
+                <FaArrowDown className="text-main" />
               </div>
             </button>
           </div>
