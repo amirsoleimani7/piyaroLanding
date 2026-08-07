@@ -7,7 +7,7 @@ import "./goldenChance.css";
 
 export default function GoldenChance() {
   return (
-    <div className="relative  mb-10 max-w-[80%] max-md:max-w-[90%] shadow-xl rounded-xl flex justify-between items-center px-10 py-5  max-md:px-5 max-md:py-3 max-sm:flex-col  bg-gray-50">
+    <div className="relative  mb-10 max-w-[80%] max-md:max-w-[90%] shadow-md rounded-xl flex justify-between items-center px-10 py-5  max-md:px-5 max-md:py-3 max-sm:flex-col  bg-gray-50">
       <div className="w-[70%] max-md:w-full">
         <h1 className="font-yekan font-bold text-5xl text-main max-md:text-4xl max-sm:text-2xl">
           <span className="text-gray-400">فرصت</span> طلایی

@@ -5,7 +5,7 @@ import DownloadApps from "./DropDown";
 export default function Header() {
   return (
     <header className=" head shadow-md fixed w-[70%] top-6 rounded-xl inset-shadow-black backdrop-blur-md flex justify-around items-center px-5 py-3 max-md:w-[95%]  max-md:top-0 max-md:rounded-b-2xl max-md:rounded-t-none z-10 ">
-      <section className="flex h-full gap-3 items-center " >
+      <section className="flex h-full gap-3 items-center ">
         <Image
           src="/logo/bg-removed.png"
           width={40}
@@ -16,10 +16,10 @@ export default function Header() {
         <div className="h-8 w-1 border-none rounded-full bg-main max-md:hidden"></div>
         <span className="font-lemonade text-xl ">پیارو گلد</span>
       </section>
-      
+
       <section className="mr-auto ml-0 flex gap-3">
         {/* import here */}
-        <DownloadApps/>
+        <DownloadApps />
         <Link href={"https://piyaro.ir/"} prefetch>
           <button className="flex items-center justify-center px-3 py-2 rounded-xl bg-main cursor-pointer hover:shadow-sm hover:bg-main-hover hover:text-grey-700 transition-all duration-400 ">
             <span className="font-yekan font-bold">ورود | ثبت‌نام</span>
