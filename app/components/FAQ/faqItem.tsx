@@ -28,9 +28,9 @@ export const FaqItem: React.FC<FaqItemProps> = ({ question, awnser }) => {
   };
   
   return (
-    <section className="flex flex-col font-yekan pr-3 mb-3 ">
+    <section className="flex flex-col font-yekan pr-3 mb-5 ">
       <div
-        className="flex items-center cursor-pointer gap-2"
+        className="flex items-center cursor-pointer gap-2 select-none"
         onClick={handleShow}
       >
         <button className="border rounded-md p-1 cursor-pointer duration-100 ease-in-out transition-all flex items-center justify-center border-gray-400 group hover:border-gray-800">
@@ -46,7 +46,7 @@ export const FaqItem: React.FC<FaqItemProps> = ({ question, awnser }) => {
         height={shaowAn.shaowItem ? "auto" : 0}
       >
         <p
-          className={` overflow-hidden duration-300 ease-in-out transition-all mt-2 text-gray-800`}
+          className={`${shaowAn.shaowItem ? "opacity-100" : "opacity-0"} overflow-hidden duration-200 ease-in-out transition-all mt-2 text-gray-800`}
           ref={ref}
         >
           {awnser}

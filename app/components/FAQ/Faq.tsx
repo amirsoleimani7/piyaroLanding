@@ -12,7 +12,7 @@ export default function Faq() {
       </h1>
       <section className="w-full flex flex-col">
         {faqItemsdata.map((f: faqType, index: number) => (
-          <div className="flex flex-col mb-5">
+          <div className="flex flex-col mb-6" key={index}>
             <FaqItem question={f.question} awnser={f.awnser} />
             <div className="w-full  border-b border-gray-300"></div>
           </div>
