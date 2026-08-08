@@ -12,23 +12,25 @@ export default function Main() {
             پیاروگلد؛ پلتفرم خرید و فروش آنلاین{" "}
             <span className="gold">طلا</span>
           </h1>
-          <p className="font-yekan text-xl">
+          <p className="font-yekan text-lg max-xl:text-base max-md:text-sm">
             خرید آنلاین طلا و نقره بدون اجرت و مالیات با ارائه فاکتور رسمی،
             ضمانت اصالت و امکان تحویل فیزیکی را در پیاروگلد تجربه کنید.
           </p>
 
           <div className="mt-20 flex gap-2">
-            <button className="flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold">
-              <span className="font-yekan">خرید طلا</span>
+            <button className="flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold duration-200 ease-in-out transition-all hover:bg-main-hover cursor-pointer group">
+              <span className="font-yekan group-hover:font-bold">خرید طلا</span>
               <div className="p-1 rounded-md border rotate-90 border-white flex items-center justify-center scale-75">
                 <FaArrowDown />
               </div>
             </button>
 
-            <button className="flex gap-2 items-center bg-main-hover-3 px-5 py-2 rounded-md justify-between">
-              <span className="font-yekan text-main ">قیمت طلا</span>
-              <div className="p-1 rounded-md border rotate-90 border-main flex items-center justify-center scale-75 ">
-                <FaArrowDown className="text-main" />
+            <button className="flex gap-2 items-center bg-main-hover-3 px-5 py-2 rounded-md justify-between duration-200 ease-in-out transition-all hover:bg-main-hover-5 cursor-pointer group">
+              <span className="font-yekan text-main-hover-4 group-hover:font-bold">
+                قیمت طلا
+              </span>
+              <div className="p-1 rounded-md border rotate-90 border-main-hover-4 flex items-center justify-center scale-75 ">
+                <FaArrowDown className="text-main-hover-4" />
               </div>
             </button>
           </div>
@@ -45,7 +47,7 @@ export default function Main() {
         ></video>
       </div>
 
-      <div className="w-[70%] border border-gray-300 h-50 self-center -translate-5 z-10 bg-white  rounded-2xl"></div>
+      <div className="w-[85%] border border-gray-300 h-50 self-center -translate-5 z-10 bg-white  rounded-2xl"></div>
     </div>
   );
 }
