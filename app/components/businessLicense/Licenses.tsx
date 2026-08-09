@@ -9,13 +9,13 @@ import "swiper/css/autoplay";
 
 export default () => {
   return (
-    <div className="flex flex-col items-center mb-20 mt-auto max-md:w-[80%] max-xl:w-[90%] max-sm:w-full ">
+    <div className="flex flex-col items-center  mb-20 mt-5 max-md:w-[80%] max-xl:w-[90%] max-sm:w-full ">
       <div className="rounded-xl border-none px-3 py-1 transition-all duration-100 ease-in-out outline-1 cursor-pointer outline-gray-300 shadow-md hover:bg-main hover:shadow-md hover:outline-main active:translate-y-0.5 hover:text-white hover:font-bold">
         <h1 className="font-yekan text-xl font-semibold">مجوزها</h1>
       </div>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={10}
+        spaceBetween={0}
         loop
         autoplay={{
           delay: 1000,
@@ -24,7 +24,7 @@ export default () => {
         
         slidesPerView={5}
         onSwiper={(swiper) => console.log(swiper)}
-        className="w-full max-w-4xl  shadow-md p-5 rounded-xl px-10"
+        className="w-full max-w-4xl  shadow-md p-5 rounded-xl px-10 "
       >
         {license.map((l: LicenseType, index: number) => (
           <SwiperSlide

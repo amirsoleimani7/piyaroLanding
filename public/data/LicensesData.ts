@@ -10,36 +10,29 @@ export const license: LicenseType[] = [
     URL: "/licenses/computerUnion.webp",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-    {
+  {
     id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
+    URL: "/licenses/ecunion_be2d64d0c2.png",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-   {
+  {
     id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
+    URL: "/licenses/enamad_8aabc7fc2a.png",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-    {
+  {
     id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
+    URL: "/licenses/fintech_bd0fcfb443.png",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-    {
+  {
     id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
+    URL: "/licenses/kasbokar_e4c420109f.png",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-    {
+  {
     id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
+    URL: "/licenses/goldUnion.png",
     desc: "سازمان نظام صنفی یارانه‌ای کشور",
   },
-    {
-    id: 6,
-    URL: "/licenses/nezamsenfi_46adef9a38.png",
-    desc: "سازمان نظام صنفی یارانه‌ای کشور",
-  },
-
-
 ];
