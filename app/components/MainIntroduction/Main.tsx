@@ -1,4 +1,3 @@
-import { IoIosArrowDown } from "react-icons/io";
 import { FaArrowDown } from "react-icons/fa6";
 
 import "./main.css";
@@ -47,7 +46,9 @@ export default function Main() {
         ></video>
       </div>
 
-      <div className="w-[85%] border border-gray-300 h-50 self-center -translate-5 z-10 bg-white  rounded-2xl"></div>
+      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl">
+
+      </div>
     </div>
   );
 }
