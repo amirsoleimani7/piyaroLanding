@@ -5,7 +5,7 @@ export default function Faq() {
   console.log(faqItemsdata);
 
   return (
-    <div className="flex flex-col  mt-auto mb-10 w-[60%] rounded-xl ">
+    <div className="flex flex-col  mt-auto mb-10 w-[60%] rounded-xl max-md:w-[80%] max-sm:w-[90%]">
       <h1 className="font-yekan font-bold text-center text-3xl mb-10">
         سوالات متداول
       </h1>
