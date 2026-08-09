@@ -6,8 +6,8 @@ import "./main.css";
 export default function Main() {
   return (
     <div className="w-[70%]  flex flex-col justify-between  mt-25 relative ">
-      <div className="flex w-full mt-25 justify-between">
-        <div className=" w-[50%]  flex flex-col gap-5">
+      <div className="flex w-full mt-25 justify-between  max-md:flex-col-reverse">
+        <div className=" w-[50%]  flex flex-col gap-5 max-md:w-full max-md:mb-5">
           <h1 className="text-4xl font-bold font-yekan ">
             پیاروگلد؛ پلتفرم خرید و فروش آنلاین{" "}
             <span className="gold">طلا</span>
@@ -47,11 +47,11 @@ export default function Main() {
         ></video>
       </div>
 
-      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-lg:translate-0">
+      <div className="w-[95%] p-2  border-gray-300  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-lg:translate-0">
         {MainFrame.map((m: MainFrameType, index: number) => (
-          <div className="flex flex-col justify-center items-center font-yekan gap-1">
+          <div className="flex flex-col justify-center items-center font-yekan gap-1" key={index} >
             <h1 className="font-bold text-lg">{m.mainSec}</h1>
-            <p>{m.secSec}</p>
+            <p className="max-md:text-sm text-gray-700 font-yekan">{m.secSec}</p>
           </div>
         ))}
       </div>
