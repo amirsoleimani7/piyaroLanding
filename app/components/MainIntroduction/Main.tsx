@@ -3,6 +3,7 @@ import { MainFrame, MainFrameType } from "../../../public/data/mainFrameData";
 import "./main.css";
 
 export default function Main() {
+  
   return (
     <div className="w-[70%]  flex flex-col justify-between  mt-25 relative ">
       <div className="flex w-full mt-25 justify-between  max-md:flex-col-reverse">
@@ -31,6 +32,7 @@ export default function Main() {
             </button>
           </div>
         </div>
+        
         <video
           loop
           controls={false}
@@ -41,8 +43,9 @@ export default function Main() {
           src="/vid/s5.mp4"
           className="h-fit self-center select-none "
         ></video>
+        
       </div>
-
+      
       <div className="w-[95%] p-2  border-gray-300  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-lg:translate-0  py-5 ">
         {MainFrame.map((m, index) => (
           <div

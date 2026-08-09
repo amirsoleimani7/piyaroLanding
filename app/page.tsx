@@ -4,6 +4,7 @@ import GoldenChance from "./components/goldenChance/GoldenChance";
 import Licenses from "./components/businessLicense/Licenses";
 import Faq from "./components/FAQ/Faq";
 import Main from "./components/MainIntroduction/Main";
+import Price from "./components/Price/Price";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     ">
       <Header />
       <Main/>
+      <Price/>
       <Licenses />
       <Faq />
       <GoldenChance />
