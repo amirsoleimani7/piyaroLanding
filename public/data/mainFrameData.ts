@@ -1,4 +1,3 @@
-import { secureHeapUsed } from "crypto";
 
 export type MainFrameType = {
   mainSec: string;
@@ -11,7 +10,7 @@ export const MainFrame: MainFrameType[] = [
     secSec: "تحویل فیزیکی طلا",
   },
   {
-    mainSec: "۲۹۰۹ نفر",
+    mainSec: ` ۲۹۹۹ نفر`,
     secSec: "کاربر فعال",
   },
   {
