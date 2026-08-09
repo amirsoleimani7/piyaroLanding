@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <div className="w-[70%]  flex flex-col justify-between  mt-25 relative ">
       <div className="flex w-full mt-25 justify-between  max-md:flex-col-reverse">
-        <div className=" w-[50%]  flex flex-col gap-5 max-md:w-full max-md:mb-5">
+        <div className=" w-[50%]  flex flex-col gap-5 max-md:w-full max-md:mb-5 shrink-0">
           <h1 className="text-4xl font-bold font-yekan ">
             پیاروگلد؛ پلتفرم خرید و فروش آنلاین{" "}
             <span className="gold">طلا</span>
@@ -17,8 +17,8 @@ export default function Main() {
             ضمانت اصالت و امکان تحویل فیزیکی را در پیاروگلد تجربه کنید.
           </p>
 
-          <div className="mt-5 flex gap-2">
-            <button className="flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold duration-200 ease-in-out transition-all hover:bg-main-hover cursor-pointer group">
+          <div className="mt-5 flex gap-2 ">
+            <button className=" flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold duration-200 ease-in-out transition-all hover:bg-main-hover cursor-pointer group">
               <span className="font-yekan group-hover:font-bold">خرید طلا</span>
               <div className="p-1 rounded-md border rotate-90 border-white flex items-center justify-center scale-75">
                 <FaArrowDown />
