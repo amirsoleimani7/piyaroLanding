@@ -1,4 +1,5 @@
 import { FaArrowDown } from "react-icons/fa6";
+import { MainFrame, MainFrameType } from "../../../public/data/mainFrameData";
 
 import "./main.css";
 
@@ -46,8 +47,13 @@ export default function Main() {
         ></video>
       </div>
 
-      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl">
-
+      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1">
+        {MainFrame.map((m: MainFrameType, index: number) => (
+          <div className="flex flex-col justify-center items-center font-yekan gap-1">
+            <h1 className="font-bold text-lg">{m.mainSec}</h1>
+            <p>{m.secSec}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,9 +1,6 @@
 "use client";
 import { FaArrowLeft } from "react-icons/fa";
-// import { BorderBeam } from "../lightswind/border-beam";
 import { BorderBeam } from "@/components/ui/border-beam";
-
-import "./goldenChance.css";
 
 export default function GoldenChance() {
   return (
