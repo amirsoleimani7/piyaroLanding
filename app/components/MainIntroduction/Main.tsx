@@ -17,7 +17,7 @@ export default function Main() {
             ضمانت اصالت و امکان تحویل فیزیکی را در پیاروگلد تجربه کنید.
           </p>
 
-          <div className="mt-20 flex gap-2">
+          <div className="mt-5 flex gap-2">
             <button className="flex gap-2 items-center  px-4 py-1.5 rounded-md justify-between bg-main text-white font-bold duration-200 ease-in-out transition-all hover:bg-main-hover cursor-pointer group">
               <span className="font-yekan group-hover:font-bold">خرید طلا</span>
               <div className="p-1 rounded-md border rotate-90 border-white flex items-center justify-center scale-75">
@@ -47,7 +47,7 @@ export default function Main() {
         ></video>
       </div>
 
-      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1">
+      <div className="w-[95%]  border-gray-300 h-30  self-center -translate-5 z-10 bg-gray-100  rounded-2xl grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-lg:translate-0">
         {MainFrame.map((m: MainFrameType, index: number) => (
           <div className="flex flex-col justify-center items-center font-yekan gap-1">
             <h1 className="font-bold text-lg">{m.mainSec}</h1>
