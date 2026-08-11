@@ -59,7 +59,8 @@ export default function Price() {
               placeholder="مبلغ مورد نظر را وارد کنید"
               className="w-full border border-gray-200 rounded-md h-10 px-3 font-yekan "
             />
-            <span className="absolute left-3 top-1/2">تست</span>
+            <span className="absolute left-3 top-[1/2] font-yekan">تست</span>
+            <div className="absolute left-12 top-1/2 h-1/4 border-r border-gray-200 "></div>
           </div>
         </div>
       </div>
