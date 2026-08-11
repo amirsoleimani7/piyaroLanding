@@ -49,18 +49,21 @@ export default function Price() {
         </p>
         <div className="mt-auto mb-0 w-full ">
           <div className="relative">
-            <label htmlFor="price" className="font-yekan font-bold">
+            <label htmlFor="price" className="font-yekan font-bold text-sm ">
               مبلغ پرداختی
             </label>
             <input
-              type="text"
-              inputMode="numeric"
+              type="number"
+              max={10}
               id="price"
               placeholder="مبلغ مورد نظر را وارد کنید"
-              className="w-full border border-gray-200 rounded-md h-10 px-3 font-yekan "
+              maxLength={30}
+              className="w-full outline-gray-300 outline border-none rounded-md h-10 px-3 font-yekan ease-in-out transition-all duration-200 mt-1"
             />
-            <span className="absolute left-3 top-[1/2] font-yekan">تست</span>
-            <div className="absolute left-12 top-1/2 h-1/4 border-r border-gray-200 "></div>
+            <div className="absolute h-6 left-3 top-[55%] flex z-10 gap-2 ">
+              <div className="h-full  border-r  border-gray-300"></div>
+              <span className="font-yekan text-gray-500">تومان</span>
+            </div>
           </div>
         </div>
       </div>
