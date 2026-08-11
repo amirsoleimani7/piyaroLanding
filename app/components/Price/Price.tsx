@@ -2,6 +2,7 @@
 
 import { LineChart } from "@mui/x-charts/LineChart";
 import { useState } from "react";
+
 import "./PriceStyle.css";
 
 export default function Price() {
@@ -53,11 +54,17 @@ export default function Price() {
               مبلغ پرداختی
             </label>
             <input
-              type="number"
-              max={10}
+              type="text"
+              inputMode="numeric"
               id="price"
               placeholder="مبلغ مورد نظر را وارد کنید"
               maxLength={30}
+              pattern="[0-9]*"
+              onChange={(e) => {
+                // Only allow digits
+                const value = e.target.value.replace(/\D/g, "");
+                e.target.value = value;
+              }}
               className="w-full outline-gray-300 outline border-none rounded-md h-10 px-3 font-yekan ease-in-out transition-all duration-200 mt-1"
             />
             <div className="absolute h-6 left-3 top-[55%] flex z-10 gap-2 ">
