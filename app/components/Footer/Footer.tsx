@@ -1,4 +1,4 @@
-import "./footerStyle.css";
+// import "./footerStyle.css";
 import Image from "next/image";
 import Link from "next/link";
 
