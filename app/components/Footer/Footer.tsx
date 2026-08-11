@@ -13,6 +13,7 @@ export default function Footer() {
             height={40}
             alt="Picture of the Company Logo"
           />
+          
           <span className="font-lemonade text-3xl ">پیارو گلد</span>
         </div>
 
