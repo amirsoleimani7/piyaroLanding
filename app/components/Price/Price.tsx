@@ -2,6 +2,7 @@
 
 import { LineChart } from "@mui/x-charts/LineChart";
 import { useState } from "react";
+import "./PriceStyle.css";
 
 export default function Price() {
   const [sellOrBuy, setSellOrBuy] = useState<"buy" | "sell">("buy");
@@ -19,7 +20,7 @@ export default function Price() {
           ]}
         />
       </div>
-      <div className="w-1/2 h-full  max-lg:w-full">
+      <div className="w-1/2 h-full  max-lg:w-full flex flex-col">
         <div className="w-full h-10 flex justify-between gap-4 mb-5 ">
           <button
             className={`w-1/2 font-yekan font-bold p-2  rounded-md ease-in-out duraion-200 transition-all cursor-pointer border border-gray-200  hover:border-main-hover ${sellOrBuy === "buy" ? "bg-main-select  border-main-hover" : ""}`}
@@ -38,12 +39,29 @@ export default function Price() {
             فروش
           </button>
         </div>
-        <h1 className="font-yekan text-2xl font-bold mb-1">با تحلیل بازار طلا، هوشمندانه معامله کنید</h1>
+        <h1 className="font-yekan text-2xl font-bold mb-1">
+          با تحلیل بازار طلا، هوشمندانه معامله کنید
+        </h1>
         <p className="font-yekan text-lg">
           با رصد لحظه‌ای قیمت طلا، همیشه یک قدم جلوتر از بازار باشید؛ هر تغییر
           را به فرصتی تبدیل کنید و با تصمیم‌های آگاهانه، آینده‌ای مطمئن و طلایی
           برای خود بسازید.
         </p>
+        <div className="mt-auto mb-0 w-full ">
+          <div className="relative">
+            <label htmlFor="price" className="font-yekan font-bold">
+              مبلغ پرداختی
+            </label>
+            <input
+              type="text"
+              inputMode="numeric"
+              id="price"
+              placeholder="مبلغ مورد نظر را وارد کنید"
+              className="w-full border border-gray-200 rounded-md h-10 px-3 font-yekan "
+            />
+            <span className="absolute left-3 top-1/2">تست</span>
+          </div>
+        </div>
       </div>
     </section>
   );

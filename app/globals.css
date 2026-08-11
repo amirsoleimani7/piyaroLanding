@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 /* ---break---*/
@@ -8,14 +8,14 @@
   --color-main: #ffbe00;
   --color-main-hover: #ffd200;
   --color-main-hover-2: #fffb00;
-  --color-main-hover-3 : #f7f7e9;
-  --color-main-hover-4 : #4a4a00;
-  --color-main-hover-5 : #f2f2c2;
-  --color-main-select : #fffaed;
-  --color-main-select-2 : #e8ffe8;
-  --color-main-select-2-border : #7dff7d;
+  --color-main-hover-3: #f7f7e9;
+  --color-main-hover-4: #4a4a00;
+  --color-main-hover-5: #f2f2c2;
+  --color-main-select: #fffaed;
+  --color-main-select-2: #e8ffe8;
+  --color-main-select-2-border: #7dff7d;
   --font-yekan: "Yekan bakh", sans-serif;
-  
+
   --font-iran: "Iran Sans", sans-serif;
   --font-lemonade: "Lemonade";
   --font-lale: "Lalezar", sans-serif;
@@ -63,7 +63,6 @@
 
 /* this might need chaning later on */
 body {
-
   direction: rtl;
   /* background: #fcf8e6;
   background: linear-gradient(
@@ -75,9 +74,9 @@ body {
   ); */
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
-  
+
   background: transparent;
 }
 
