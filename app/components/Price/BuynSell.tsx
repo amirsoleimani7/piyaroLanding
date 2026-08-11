@@ -60,18 +60,18 @@ export default function BuynSell() {
           </div>
         </div>
       </div>
-      
+
       <div className="mt-5 mb-0 w-full ">
         <div> {}</div>
         <div className="relative">
           <label htmlFor="price" className="font-yekan font-bold text-sm ">
-            مبلغ پرداختی
+            مقدار{" "}
           </label>
           <input
             type="text"
             inputMode="numeric"
             id="price"
-            placeholder="مبلغ مورد نظر را وارد کنید"
+            placeholder="وزن "
             maxLength={30}
             pattern="[0-9]*"
             onChange={(e) => {
@@ -82,7 +82,7 @@ export default function BuynSell() {
           />
           <div className="absolute h-6 left-3 top-[55%] flex z-10 gap-2 ">
             <div className="h-full  border-r  border-gray-300"></div>
-            <span className="font-yekan text-gray-500">تومان</span>
+            <span className="font-yekan text-gray-500">گرم</span>
           </div>
         </div>
       </div>
