@@ -27,16 +27,20 @@ input[type="number"] {
 /* PriceStyle.css */
 .apexcharts-text {
   font-family: var(--font-yekan), "Tahoma", "Arial", sans-serif !important;
+  direction: rtl;
 }
 
 .apexcharts-title-text {
   font-family: var(--font-yekan), "Tahoma", "Arial", sans-serif !important;
+  direction: rtl;
 }
 
 .apexcharts-tooltip-text {
   font-family: var(--font-yekan), "Tahoma", "Arial", sans-serif !important;
+  direction: rtl;
 }
 
 .apexcharts-legend-text {
   font-family: var(--font-yekan), "Tahoma", "Arial", sans-serif !important;
+  direction: rtl;
 }

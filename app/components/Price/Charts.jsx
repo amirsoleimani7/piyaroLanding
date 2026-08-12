@@ -1,21 +1,22 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import fa from "apexcharts/dist/locales/fa.json";
 import "./PriceStyle.css";
 
 const generateData = () => {
   const data = [];
   const ts2 = new Date("14 Jan 2025").getTime();
-  
+
   // Starting value
   let currentValue = 1500000;
 
   for (let i = 0; i < 120; i++) {
     const timestamp = ts2 + i * 86400000;
-    
+
     // Generate smoother changes (random walk with small steps)
-    const change = (Math.random() - 0.5) * 80000; // Random change between -40,000 and +40,000
-    currentValue = Math.max(1000000, Math.min(4000000, currentValue + change)); // Keep within bounds
-    
+    const change = (Math.random() - 0.5) * 80000;
+    currentValue = Math.max(1000000, Math.min(4000000, currentValue + change));
+
     // Round to nearest 1000 for cleaner numbers
     const roundedValue = Math.round(currentValue / 1000) * 1000;
     data.push([timestamp, roundedValue]);
@@ -35,6 +36,9 @@ const ApexChart = () => {
     ],
     options: {
       chart: {
+        locales: [fa],
+        defaultLocale: "fa",
+        animations: { easing: "bounce" },
         type: "area",
         stacked: false,
         zoom: {
@@ -43,7 +47,7 @@ const ApexChart = () => {
         toolbar: {
           show: false,
         },
-        fontFamily: "'IRANSans', 'Tahoma', 'Arial', sans-serif", // Add your preferred font
+        fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
       },
       dataLabels: {
         enabled: false,
@@ -55,9 +59,9 @@ const ApexChart = () => {
         text: "قیمت لحظه‌ای ۱ گرم طلا ۱۸ عیار",
         align: "right",
         style: {
-          fontSize: "16px",
+          fontSize: "18px",
           fontWeight: "bold",
-          fontFamily: "'IRANSans', 'Tahoma', 'Arial', sans-serif",
+          fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
           color: "#263238",
         },
       },
@@ -70,7 +74,7 @@ const ApexChart = () => {
           opacityTo: 0.8,
           stops: [0, 95, 100],
         },
-        colors: ["#FFD700"], // Gold color
+        colors: ["#FFD700"],
       },
       yaxis: {
         show: false,
@@ -104,26 +108,35 @@ const ApexChart = () => {
         shared: false,
         y: {
           formatter: function (val) {
-            return "ریال " + (val / 1000000).toFixed(1) + "M";
+            return (val / 1000000).toFixed(1) + " میلیون ریال";
           },
         },
         x: {
           show: true,
-          format: "dd MMM yyyy",
+          // Custom formatter for Persian date
+          formatter: function(val) {
+            const date = new Date(val);
+            const persianMonths = [
+              'فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور',
+              'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'
+            ];
+            const day = date.getDate();
+            const month = persianMonths[date.getMonth()];
+            const year = date.getFullYear();
+            return `${day} ${month} ${year}`;
+          },
         },
         style: {
-          fontSize: "12px",
-          fontFamily: "'IRANSans', 'Tahoma', 'Arial', sans-serif",
+          fontSize: "13px",
         },
       },
       stroke: {
         curve: "smooth",
-        width: 3, // Increased line width for better visibility
-        colors: ["#FFD700"], // Gold color for the line
-        dashArray: 0, // Solid line (set to e.g., [5, 5] for dashed)
-        lineCap: "round", // Rounded line endings
+        width: 3,
+        colors: ["#FFD700"],
+        dashArray: 0,
+        lineCap: "round",
       },
-      // Customize the current value marker at the end
       annotations: {
         points: [
           {
@@ -143,7 +156,6 @@ const ApexChart = () => {
               style: {
                 fontSize: "14px",
                 fontWeight: "bold",
-                fontFamily: "'var(--font-lemonade)', 'Tahoma', 'Arial', sans-serif",
                 color: "#263238",
                 background: "#FFFFFF",
                 padding: {
@@ -165,7 +177,10 @@ const ApexChart = () => {
   });
 
   return (
-    <div className="w-full h-full flex justify-center items-center" style={{ fontFamily: "'IRANSans', 'Tahoma', 'Arial', sans-serif" }}>
+    <div
+      className="w-full h-full flex justify-center items-center"
+      style={{ fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif" }}
+    >
       <div id="chart" className="w-full h-full">
         <ReactApexChart
           options={state.options}

@@ -3,7 +3,6 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import BuynSell from "./BuynSell";
 import ApexChart from "./Charts";
-
 import "./PriceStyle.css";
 
 export default function Price() {
