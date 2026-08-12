@@ -11,7 +11,7 @@ export default function Price() {
       {/* test change */}
 
       <div className="w-1/2 h-full  max-lg:w-full flex justify-center items-center rounded-md shadow-md">
-      <ApexChart/>
+        <ApexChart />
       </div>
       <BuynSell />
     </section>

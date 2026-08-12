@@ -32,7 +32,7 @@ input[type="number"] {
 
 .apexcharts-title-text {
   font-family: var(--font-yekan), "Tahoma", "Arial", sans-serif !important;
-  direction: rtl;
+  /* direction: rtl; */
 }
 
 .apexcharts-tooltip-text {
