@@ -2,14 +2,12 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import "./PriceStyle.css";
 
-// This demo also loads: https://apexcharts.com/samples/assets/irregular-data-series.js// Generate your own sample data instead of loading external script
 const generateData = () => {
   const data = [];
   const ts2 = new Date("14 Jan 2025").getTime();
 
   for (let i = 0; i < 120; i++) {
-    const timestamp = ts2 + i * 86400000; // add 1 day each time
-    // Generate random price between 1000000 and 5000000
+    const timestamp = ts2 + i * 86400000;
     const value = Math.floor(Math.random() * 4000000) + 1000000;
     data.push([timestamp, value]);
   }
@@ -19,7 +17,7 @@ const generateData = () => {
 const dates = generateData();
 
 const ApexChart = () => {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     series: [
       {
         name: "Meridian Motors",
@@ -30,14 +28,11 @@ const ApexChart = () => {
       chart: {
         type: "area",
         stacked: false,
-        height: 350,
         zoom: {
-          type: "x",
-          enabled: true,
-          autoScaleYaxis: true,
+          enabled: false, // Disable zoom
         },
         toolbar: {
-          autoSelected: "zoom",
+          show: false, // Remove toolbar completely
         },
       },
       dataLabels: {
@@ -60,37 +55,47 @@ const ApexChart = () => {
           stops: [0, 90, 100],
         },
       },
+      // Remove Y-axis labels and title
       yaxis: {
+        show: false, // Hide Y-axis completely
         labels: {
-          formatter: function (val) {
-            return "$" + (val / 1000000).toFixed(0);
-          },
+          show: false, // Hide Y-axis labels
         },
         title: {
-          text: "Price",
+          text: "", // Remove title text
         },
       },
+      // Remove X-axis labels
       xaxis: {
         type: "datetime",
+        labels: {
+          show: false, // Hide X-axis labels (dates)
+        },
+        axisBorder: {
+          show: false, // Hide X-axis border line
+        },
+        axisTicks: {
+          show: false, // Hide X-axis tick marks
+        },
+      },
+      // Remove grid lines (optional)
+      grid: {
+        show: false,
       },
       tooltip: {
-        shared: false,
-        y: {
-          formatter: function (val) {
-            return "$" + (val / 1000000).toFixed(0);
-          },
-        },
+        enabled: false, // Remove tooltip completely
       },
     },
   });
 
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <div id="chart" className="w-full h-full ">
+      <div id="chart" className="w-full h-full">
         <ReactApexChart
-          // options={state.options}
+          options={state.options}
           series={state.series}
           type="area"
+          height="100%"
         />
       </div>
     </div>
