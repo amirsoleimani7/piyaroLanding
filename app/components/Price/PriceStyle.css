@@ -20,8 +20,8 @@ input[type="number"] {
 }
 
 #chart {
-  max-width: 650px;
-  margin: 35px auto;
+  /* max-width: 650px; */
+  /* margin: 35px auto; */
 }
 
 /* PriceStyle.css */

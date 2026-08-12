@@ -6,7 +6,7 @@ export default function BuynSell() {
   const [sellOrBuy, setSellOrBuy] = useState<"buy" | "sell">("buy");
 
   return (
-    <div className="w-1/2 h-full  max-lg:w-full flex flex-col">
+    <div className="w-1/2 h-full  max-lg:w-full flex flex-col ">
       <div className="w-full h-10 flex justify-between gap-4 mb-5 ">
         <button
           className={`w-1/2 font-yekan font-bold p-2  rounded-md ease-in-out duraion-200 transition-all cursor-pointer border border-gray-200  hover:border-main-hover ${sellOrBuy === "buy" ? "bg-main-select  border-main-hover" : ""}`}

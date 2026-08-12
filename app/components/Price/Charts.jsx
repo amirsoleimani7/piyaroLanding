@@ -47,7 +47,8 @@ const ApexChart = () => {
         toolbar: {
           show: false,
         },
-        fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
+        fontFamily:
+          "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
       },
       dataLabels: {
         enabled: false,
@@ -61,7 +62,8 @@ const ApexChart = () => {
         style: {
           fontSize: "18px",
           fontWeight: "bold",
-          fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
+          fontFamily:
+            "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
           color: "#263238",
         },
       },
@@ -114,11 +116,21 @@ const ApexChart = () => {
         x: {
           show: true,
           // Custom formatter for Persian date
-          formatter: function(val) {
+          formatter: function (val) {
             const date = new Date(val);
             const persianMonths = [
-              'فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور',
-              'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'
+              "فروردین",
+              "اردیبهشت",
+              "خرداد",
+              "تیر",
+              "مرداد",
+              "شهریور",
+              "مهر",
+              "آبان",
+              "آذر",
+              "دی",
+              "بهمن",
+              "اسفند",
             ];
             const day = date.getDate();
             const month = persianMonths[date.getMonth()];
@@ -178,15 +190,18 @@ const ApexChart = () => {
 
   return (
     <div
-      className="w-full h-full flex justify-center items-center"
-      style={{ fontFamily: "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif" }}
+      className="w-1/2 h-full  max-lg:w-full flex justify-center items-center rounded-md shadow-md " 
+      style={{
+        fontFamily:
+          "var(--font-yekan), 'IRANSans', 'Tahoma', 'Arial', sans-serif",
+      }}
     >
+      
       <div id="chart" className="w-full h-full">
         <ReactApexChart
           options={state.options}
           series={state.series}
           type="area"
-          height="100%"
         />
       </div>
     </div>

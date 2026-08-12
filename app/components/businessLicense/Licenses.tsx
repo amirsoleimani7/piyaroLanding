@@ -21,7 +21,6 @@ export default () => {
           delay: 1000,
           disableOnInteraction: false,
         }}
-        
         slidesPerView={5}
         onSwiper={(swiper) => console.log(swiper)}
         className="w-full max-w-4xl  shadow-md p-5 rounded-xl px-10 "
