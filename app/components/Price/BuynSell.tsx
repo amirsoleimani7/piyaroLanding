@@ -87,8 +87,9 @@ export default function BuynSell() {
           </div>
         </div>
       </div>
-      <button className="w-full h-10 bg-main">
-        
+      
+      <button className="w-full h-10 bg-main-button-hover  hover:bg-main-button border-gray-200 cursor-pointer border rounded-md font-yekan font-semibold mt-2  hover:bg- ease-in-out duration-200 transition-all ">
+        خرید آنلاین طا
       </button>
     </div>
   );
