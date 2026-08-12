@@ -45,6 +45,7 @@ export default function BuynSell() {
             type="text"
             inputMode="numeric"
             id="price"
+            autoComplete="off"
             placeholder="مبلغ مورد نظر را وارد کنید"
             maxLength={30}
             pattern="[0-9]*"
@@ -61,7 +62,7 @@ export default function BuynSell() {
         </div>
       </div>
 
-      <div className="mt-5 mb-0 w-full ">
+      <div className="mt-2 mb-0 w-full ">
         <div> {}</div>
         <div className="relative">
           <label htmlFor="price" className="font-yekan font-bold text-sm ">
@@ -86,6 +87,9 @@ export default function BuynSell() {
           </div>
         </div>
       </div>
+      <button className="w-full h-10 bg-main">
+        
+      </button>
     </div>
   );
 }
