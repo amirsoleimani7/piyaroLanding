@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install --legacy-peer-deps && npm run build",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "install-deps": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
